@@ -40,7 +40,7 @@ class admin_teams(admin_teamsTemplate):
     permission = self.drop_down_2.selected_value
 
     email_list = []
-    data = tables.app_tables.
+    data = tables.app_tables.admin_teams.search()
     for i in data:
       email_list.append(i['email'])
     
